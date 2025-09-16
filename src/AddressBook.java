@@ -18,13 +18,16 @@ public class AddressBook {
     }
 
     public static void main(String[] args) {
-        System.out.println("Address Book");
+
 
         // Lab step 9: Create a BuddyInfo and add/remove it
-        BuddyInfo homer = new BuddyInfo("Homer");
+        System.out.println("Address Book");
+
+        // Step 9: Create, add, remove BuddyInfo
+        BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
         AddressBook addressBook = new AddressBook();
 
-        addressBook.addBuddy(homer);
-        addressBook.removeBuddy(homer);
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(buddy);
     }
 }
